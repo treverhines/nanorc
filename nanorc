@@ -1,0 +1,177 @@
+# always show cursor position
+set const
+
+# bold instead of highlighted text
+set boldtext
+
+# make backup file
+set backup
+
+# smooth scrolling
+set smooth
+
+# justify to this column
+set fill 70
+
+# needed for spell check
+set speller "aspell -x -c"
+
+# extra line in the main window
+set morespace
+
+# new line aligns with previous line indentation. This also improves
+# the justify function
+set autoindent
+
+# dont wrap text automatically
+set nowrap
+
+# make the home key go to the first character of a line
+#set smarthome
+
+# professional mode
+set nohelp
+
+# set linenumbers
+set linenumbers
+
+# cut to end of line
+# set cut
+
+# remove trailing whitespace when justifying
+set justifytrim
+
+# make tabs spaces
+set tabstospaces
+
+# set number of indentation spaces
+set tabsize 2
+
+# enable all syntax highlighting
+include "/usr/local/share/nano/*"
+
+# use my own syntax highlighting for python and cython
+
+# python highlighting
+include "/cmld/data2/hinest/.nano/python.nanorc"
+
+# cython highlighting
+include "/cmld/data2/hinest/.nano/cython.nanorc"
+
+unset multibuffer
+
+# Notes on key bindings
+#
+#  Tab calls the function bound to ^I
+#  ^Enter calls the function bound to ^J
+#  Enter calls the function bound to ^M
+
+
+# unbind all keybindings that I never use
+unbind F1 all
+unbind F2 all
+unbind F3 all
+unbind F4 all
+unbind F5 all
+unbind F6 all
+unbind F7 all
+unbind F8 all
+unbind F9 all
+unbind F10 all
+unbind F11 all
+unbind F12 all
+unbind F13 all
+unbind F14 all
+unbind F15 all
+unbind F16 all
+unbind ^G all # make ^H to ONLY key for help
+unbind ^J main
+unbind ^\ main
+unbind ^_ main
+unbind ^^ main
+unbind M-6 main
+unbind M-7 main
+unbind M-8 main
+unbind M-9 main
+unbind M-0 main
+unbind M-R main
+unbind M-G main
+unbind M-A main
+unbind M-Space main
+unbind M-_ main
+unbind M-= main
+unbind M-| main
+unbind M-, main
+unbind M-. main
+unbind M-? main
+unbind M-^ main
+unbind M-E main
+unbind M-T main
+unbind M-{ main
+unbind M-} main
+unbind ^] main
+unbind M-Q main
+
+# NAVIGATION
+bind ^F right all
+bind ^B left all
+bind ^P up all
+bind ^N down all
+bind ^A home all
+bind ^E end all
+bind ^V nextpage all
+bind ^Q prevpage all
+bind ^G gotoline all
+bind M-\ firstline all
+bind M-/ lastline all
+bind M-] findbracket all
+
+# UNDO/REDO
+bind ^U undo main
+bind M-U redo main
+
+# SEARCH/REPLACE
+bind ^W whereis main
+bind M-W searchagain main
+bind ^R replace main
+
+# COPY/CUT/PASTE/REMOVE
+bind ^C copytext main
+bind ^K cut main
+bind ^Y uncut main
+bind ^D delete main
+
+# LOAD/SAVE/QUIT
+bind ^O insert main
+bind ^S writeout main
+bind ^X exit all
+
+# HELP
+bind ^H help all
+bind M-H nohelp main
+
+# INDENTING AND JUSTIFYING
+bind ^J justify main
+bind M-J fulljustify main
+
+bind ^I indent main
+bind M-I unindent main
+bind M-A autoindent main
+
+# COMMENT BLOCK
+bind M-3 comment main
+
+# SET MARK
+bind ^Space mark main
+
+# toggle smart home
+bind M-Q smarthome main
+
+## Paint the interface elements of nano.
+## These are examples; by default there are no colors.
+#set titlecolor brightblue
+set numbercolor blue
+#set statuscolor brightblue
+#set keycolor brightblue
+#set functioncolor blue
+

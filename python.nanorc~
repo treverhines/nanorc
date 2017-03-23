@@ -1,0 +1,37 @@
+syntax "python" "\.py$"
+header "^#!.*python[-0-9._]*"
+linter pyflakes
+comment "#"
+
+# make function or class definitions blue
+icolor brightblue "def [ _0-9A-Z]+"
+icolor brightblue "class [ _0-9A-Z]+"
+
+# make decorators magenta
+icolor brightmagenta "@[0-9A-Z_.]+"
+
+# set python key words to cyan
+color brightcyan "\<(self|help|and|as|assert|break|class|continue|def)\>"
+color brightcyan "\<(del|elif|else|except|exec|finally|for|from|global)\>"
+color brightcyan "\<(if|import|in|is|lambda|not|or|pass|print|raise)\>"
+color brightcyan "\<(return|try|while|with|yield)\>"
+
+# make special objects magenta
+color magenta "\<(True|False|None)\>"
+
+# Single-quoted strings.
+color brightgreen "'([^'\]|\\.)+'"
+color brightgreen ""([^"\]|\\.)+""
+
+# Comments.
+color brightred "(^|[[:blank:]])#.*$"
+
+# Triple-quoted strings.
+color brightgreen    start="'''[^'),]" end="(^|[^(\])'''"
+color brightgreen start="\"\"\"[^"),]" end="(^|[^(\])\"\"\""
+
+# Reminders.
+color ,red "(FIXME|TODO|XXX)"
+
+
+

@@ -1,0 +1,37 @@
+syntax "cython" "\.pyx$"
+comment "#"
+
+# make function or class definitions blue 
+icolor brightblue "def [ _0-9A-Z]+"
+icolor brightblue "class [ _0-9A-Z]+"
+icolor brightblue "cdef [ ._0-9A-Z]+"
+icolor brightblue "cpdef [ ._0-9A-Z]+"
+
+# make decorators magenta
+icolor brightmagenta "@[0-9A-Z_.()]+"
+
+# set python key words to cyan
+color brightcyan "\<(help|self|and|as|assert|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|not|or|pass|print|raise|return|try|while|with|yield)\>"
+
+# set cython key words to cyan
+color brightcyan "\<(cdef|cimport|cpdef|cppclass|ctypedef|extern|include|namespace|property|nogil)\>"
+
+# make data types yellow
+color yellow "\<(bint|char|unsigned char|short|unsigned short|int|long|unsigned int|unsigned long|long long|unsigned long long|float|double|long double|struct|void)\>"
+
+# make special objects magenta
+color magenta "\<(True|False|None)\>"
+
+# Single-quoted strings.
+color brightgreen "'([^'\]|\\.)+'"
+color brightgreen ""([^"\]|\\.)+""
+
+# Comments.
+color brightred "(^|[[:blank:]])#.*$"
+
+# Triple-quoted strings.
+color brightgreen    start="'''[^'),]" end="(^|[^(\])'''"
+color brightgreen start="\"\"\"[^"),]" end="(^|[^(\])\"\"\""
+
+# Reminders.
+color ,red "(FIXME|TODO|XXX)"
