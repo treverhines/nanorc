@@ -66,6 +66,7 @@ unset multibuffer
 #  ^Enter calls the function bound to ^J
 #  Enter calls the function bound to ^M
 
+
 # unbind all keybindings that I never use
 unbind F1 all
 unbind F2 all
