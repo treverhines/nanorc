@@ -23,11 +23,14 @@ set morespace
 # the justify function
 set autoindent
 
-# dont wrap text automatically
+# dont hard wrap text automatically
 set nowrap
 
+# set softwrap, which visually wraps the text
+set softwrap
+
 # make the home key go to the first character of a line
-#set smarthome
+set smarthome
 
 # professional mode
 set nohelp
@@ -53,10 +56,10 @@ include "/usr/local/share/nano/*"
 # use my own syntax highlighting for python and cython
 
 # python highlighting
-include "/cmld/data2/hinest/.nano/python.nanorc"
+include "/home/hinest/.nano/python.nanorc"
 
 # cython highlighting
-include "/cmld/data2/hinest/.nano/cython.nanorc"
+include "/home/hinest/.nano/cython.nanorc"
 
 unset multibuffer
 
