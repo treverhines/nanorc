@@ -27,7 +27,7 @@ set autoindent
 set nowrap
 
 # set softwrap, which visually wraps the text
-set softwrap
+# set softwrap
 
 # make the home key go to the first character of a line
 set smarthome
@@ -86,7 +86,7 @@ unbind F13 all
 unbind F14 all
 unbind F15 all
 unbind F16 all
-unbind ^G all # make ^H to ONLY key for help
+unbind ^G all # make ^H the ONLY key for help
 unbind ^J main
 unbind ^\ main
 unbind ^_ main

@@ -27,7 +27,7 @@ set autoindent
 set nowrap
 
 # set softwrap, which visually wraps the text
-set softwrap
+# set softwrap
 
 # make the home key go to the first character of a line
 set smarthome
