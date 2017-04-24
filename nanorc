@@ -50,6 +50,9 @@ set tabstospaces
 # set number of indentation spaces
 set tabsize 2
 
+# set additional characters that can be used in words
+set wordchars "-_"
+
 # enable all syntax highlighting
 include "/usr/local/share/nano/*"
 
