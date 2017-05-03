@@ -26,5 +26,5 @@ color cyan "(^|[[:space:]])#.*$"
 color brightyellow ""(\\.|[^"])*"" "'(\\.|[^'])*'"
 
 # Trailing whitespace.
-#color ,green "[[:space:]]+$"
+color ,green "[[:space:]]+$"
 
