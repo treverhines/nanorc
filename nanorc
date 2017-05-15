@@ -27,7 +27,7 @@ set autoindent
 set nowrap
 
 # set softwrap, which visually wraps the text
-set softwrap
+# set softwrap
 
 # make the home key go to the first character of a line
 set smarthome
@@ -36,7 +36,6 @@ set smarthome
 set nohelp
 
 # set linenumbers
-set linenumbers
 
 # cut to end of line
 # set cut
@@ -59,13 +58,13 @@ include "/usr/local/share/nano/*"
 # use my own syntax highlighting for python and cython
 
 # python highlighting
-include "/cmld/data2/hinest/.nano/python.nanorc"
+include "/home/hinest/.nano/python.nanorc"
 
 # cython highlighting
-include "/cmld/data2/hinest/.nano/cython.nanorc"
+include "/home/hinest/.nano/cython.nanorc"
 
 # bash highlighting
-include "/cmld/data2/hinest/.nano/sh.nanorc"
+include "/home/hinest/.nano/sh.nanorc"
 
 unset multibuffer
 
