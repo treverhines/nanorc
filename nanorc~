@@ -58,13 +58,13 @@ include "/usr/local/share/nano/*"
 # use my own syntax highlighting for python and cython
 
 # python highlighting
-include "/cmld/data2/hinest/.nano/python.nanorc"
+include "/home/hinest/.nano/python.nanorc"
 
 # cython highlighting
-include "/cmld/data2/hinest/.nano/cython.nanorc"
+include "/home/hinest/.nano/cython.nanorc"
 
 # bash highlighting
-include "/cmld/data2/hinest/.nano/sh.nanorc"
+include "/home/hinest/.nano/sh.nanorc"
 
 unset multibuffer
 
