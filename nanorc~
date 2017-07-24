@@ -27,7 +27,8 @@ set autoindent
 set nowrap
 
 # set softwrap, which visually wraps the text
-# set softwrap
+set softwrap
+set atblanks
 
 # make the home key go to the first character of a line
 set smarthome
@@ -38,7 +39,7 @@ set nohelp
 # set linenumbers
 
 # cut to end of line
-# set cut
+# set cutfromcursor
 
 # remove trailing whitespace when justifying
 set justifytrim
