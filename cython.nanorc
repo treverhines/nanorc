@@ -30,8 +30,8 @@ color brightgreen ""([^"\]|\\.)+""
 color brightred "(^|[[:blank:]])#.*$"
 
 # Triple-quoted strings.
-color brightgreen    start="'''[^'),]" end="(^|[^(\])'''"
-color brightgreen start="\"\"\"[^"),]" end="(^|[^(\])\"\"\""
+color brightgreen    start="'''([^'),]|$)" end="(^|[^(\])'''"
+color brightgreen start="\"\"\"([^"),]|$)" end="(^|[^(\])\"\"\""
 
 # Reminders.
 color ,red "(FIXME|TODO|XXX)"

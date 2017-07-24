@@ -35,4 +35,3 @@ color brightgreen start="\"\"\"[^"),]" end="(^|[^(\])\"\"\""
 
 # Reminders.
 color ,red "(FIXME|TODO|XXX)"
-
