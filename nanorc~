@@ -27,7 +27,7 @@ set autoindent
 set nowrap
 
 # set softwrap, which visually wraps the text
-set softwrap
+#set softwrap
 set atblanks
 
 # make the home key go to the first character of a line
@@ -36,7 +36,8 @@ set smarthome
 # professional mode
 set nohelp
 
-# set linenumbers
+# add line numbers
+set linenumbers
 
 # cut to end of line
 # set cutfromcursor
@@ -59,13 +60,13 @@ include "/usr/local/share/nano/*"
 # use my own syntax highlighting for python and cython
 
 # python highlighting
-include "/cmld/data2/hinest/.nano/python.nanorc"
+include "/home/thines/.nano/python.nanorc"
 
 # cython highlighting
-include "/cmld/data2/hinest/.nano/cython.nanorc"
+include "/home/thines/.nano/cython.nanorc"
 
 # bash highlighting
-include "/cmld/data2/hinest/.nano/sh.nanorc"
+include "/home/thines/.nano/sh.nanorc"
 
 unset multibuffer
 
@@ -178,9 +179,9 @@ bind ^I complete main
 
 ## Paint the interface elements of nano.
 ## These are examples; by default there are no colors.
-#set titlecolor brightblue
+set titlecolor brightblue
 set numbercolor blue
-#set statuscolor brightblue
-#set keycolor brightblue
-#set functioncolor blue
+set statuscolor brightblue
+set keycolor brightblue
+set functioncolor blue
 
