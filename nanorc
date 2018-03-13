@@ -1,5 +1,5 @@
 # always show cursor position
-set const
+set constantshow
 
 # bold instead of highlighted text
 set boldtext
@@ -43,13 +43,13 @@ set linenumbers
 # set cutfromcursor
 
 # remove trailing whitespace when justifying
-set justifytrim
+set trimblanks
 
 # make tabs spaces
 set tabstospaces
 
 # set number of indentation spaces
-set tabsize 2
+set tabsize 4
 
 # set additional characters that can be used in words
 set wordchars "-_"
@@ -60,10 +60,10 @@ include "/usr/local/share/nano/*"
 # use my own syntax highlighting for python and cython
 
 # python highlighting
-#include "/home/thines/.nano/python.nanorc"
+include "/home/thines/.nano/python.nanorc"
 
 # cython highlighting
-#include "/home/thines/.nano/cython.nanorc"
+include "/home/thines/.nano/cython.nanorc"
 
 # bash highlighting
 #include "/home/thines/.nano/sh.nanorc"
@@ -115,7 +115,7 @@ unbind M-. main
 unbind M-? main
 unbind M-^ main
 unbind M-E main
-unbind ^] main
+#unbind ^] main
 unbind M-Q main
 
 # NAVIGATION
@@ -175,7 +175,7 @@ bind ^Space mark main
 bind M-A smarthome main
 
 # bind autocomplete to ^I which also binds it to Tab. NICE!
-bind ^I complete main
+# bind ^I complete main
 
 ## Paint the interface elements of nano.
 ## These are examples; by default there are no colors.
