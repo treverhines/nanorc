@@ -55,18 +55,18 @@ set tabsize 4
 set wordchars "-_"
 
 # enable all syntax highlighting
-include "/usr/local/share/nano/*"
+include "/xdata1/u/thines/share/nano/*"
 
 # use my own syntax highlighting for python and cython
 
 # python highlighting
-include "/home/thines/.nano/python.nanorc"
+include "/corp/SST/thines/.nano/python.nanorc"
 
 # cython highlighting
-include "/home/thines/.nano/cython.nanorc"
+include "/corp/SST/thines/.nano/cython.nanorc"
 
 # bash highlighting
-#include "/home/thines/.nano/sh.nanorc"
+#include "/corp/SST/thines/.nano/sh.nanorc"
 
 unset multibuffer
 
