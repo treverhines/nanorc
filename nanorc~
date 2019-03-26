@@ -2,7 +2,7 @@
 set constantshow
 
 # bold instead of highlighted text
-set boldtext
+#set boldtext
 
 # make backup file
 set backup
@@ -55,18 +55,15 @@ set tabsize 4
 set wordchars "-_"
 
 # enable all syntax highlighting
-include "/corp/SST/thines/share/nano/*"
+include "/usr/local/share/nano/*"
 
 # use my own syntax highlighting for python and cython
 
 # python highlighting
-#include "/home/thines/.nano/python.nanorc"
+include "/home/thines/.nano/python.nanorc"
 
 # cython highlighting
-#include "/home/thines/.nano/cython.nanorc"
-
-# bash highlighting
-##include "/home/thines/.nano/sh.nanorc"
+include "/home/thines/.nano/cython.nanorc"
 
 unset multibuffer
 
@@ -75,48 +72,6 @@ unset multibuffer
 #  Tab calls the function bound to ^I
 #  ^Enter calls the function bound to ^J
 #  Enter calls the function bound to ^M
-
-# unbind all keybindings that I never use
-unbind F1 all
-unbind F2 all
-unbind F3 all
-unbind F4 all
-unbind F5 all
-unbind F6 all
-unbind F7 all
-unbind F8 all
-unbind F9 all
-unbind F10 all
-unbind F11 all
-unbind F12 all
-unbind F13 all
-unbind F14 all
-unbind F15 all
-unbind F16 all
-unbind ^G all # make ^H the ONLY key for help
-unbind ^J main
-unbind ^\ main
-unbind ^_ main
-unbind ^^ main
-unbind M-6 main
-unbind M-7 main
-unbind M-8 main
-unbind M-9 main
-unbind M-0 main
-unbind M-R main
-unbind M-G main
-unbind M-A main
-unbind M-Space main
-unbind M-_ main
-unbind M-= main
-unbind M-| main
-unbind M-, main
-unbind M-. main
-unbind M-? main
-unbind M-^ main
-unbind M-E main
-#unbind ^] main
-unbind M-Q main
 
 # NAVIGATION
 bind ^F right all
@@ -138,7 +93,7 @@ bind M-U redo main
 
 # SEARCH/REPLACE
 bind ^W whereis main
-bind M-W searchagain main
+bind M-W findnext main
 bind ^R replace main
 
 # COPY/CUT/PASTE/REMOVE
