@@ -5,10 +5,10 @@ set constantshow
 set backup
 
 # justify to this column
-set fill 70
+set fill 79
 
-# add a stripe at col 71
-set guidestripe 71
+# add a stripe at col 80
+set guidestripe 80
 
 # needed for spell check
 set speller "aspell -x -c"
@@ -50,10 +50,10 @@ include "/usr/local/share/nano/*"
 # use my own syntax highlighting for python and cython
 
 # python highlighting
-include "/home/hinest/.nano/python.nanorc"
+include "/home/thines/.nano/python.nanorc"
 
 # cython highlighting
-include "/home/hinest/.nano/cython.nanorc"
+include "/home/thines/.nano/cython.nanorc"
 
 unset multibuffer
 

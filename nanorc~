@@ -5,7 +5,10 @@ set constantshow
 set backup
 
 # justify to this column
-set fill 70
+set fill 79
+
+# add a stripe at col 80
+set guidestripe 80
 
 # needed for spell check
 set speller "aspell -x -c"
@@ -13,9 +16,6 @@ set speller "aspell -x -c"
 # new line aligns with previous line indentation. This also improves
 # the justify function
 set autoindent
-
-# dont hard wrap text automatically
-set nowrap
 
 # break lines at blank characters
 set atblanks
@@ -41,16 +41,19 @@ set tabsize 4
 # set additional characters that can be used in words
 set wordchars "-_"
 
+# make sure there is always a newline at the end of the file
+set finalnewline
+
 # enable all syntax highlighting
 include "/usr/local/share/nano/*"
 
 # use my own syntax highlighting for python and cython
 
 # python highlighting
-include "/home/hinest/.nano/python.nanorc"
+include "/home/thines/.nano/python.nanorc"
 
 # cython highlighting
-include "/home/hinest/.nano/cython.nanorc"
+include "/home/thines/.nano/cython.nanorc"
 
 unset multibuffer
 
@@ -61,69 +64,36 @@ unset multibuffer
 #  Enter calls the function bound to ^M
 
 # NAVIGATION
-#bind ^F right all
-#bind ^B left all
-#bind ^P up all
-#bind ^N down all
-#bind ^A home all
-#bind ^E end all
-#bind ^V nextpage all
-#bind ^Q prevpage all
-#bind ^G gotoline all
-#bind M-\ firstline all
-#bind M-/ lastline all
-#bind M-] findbracket all
-#
+bind ^Q prevpage all
+bind ^G gotoline all
+
 ## UNDO/REDO
-#bind ^U undo main
-#bind M-U redo main
-#
+bind ^U undo main
+bind M-U redo main
+
 ## SEARCH/REPLACE
-#bind ^W whereis main
-#bind M-W findnext main
-#bind ^R replace main
-#
+bind ^R replace main
+
 ## COPY/CUT/PASTE/REMOVE
-#bind ^C copytext main
-#bind ^K cut main
-#bind ^Y uncut main
-#bind ^D delete main
-#
+bind ^C copy main
+bind ^Y paste main
+
 ## LOAD/SAVE/QUIT
-#bind ^O insert main
-#bind ^S writeout main
-#bind ^X exit all
-#
+bind ^O insert main
+bind ^S writeout main
+
 ## HELP
-#bind ^H help all
-#bind M-H nohelp main
-#
-## INDENTING AND JUSTIFYING
-#bind ^J justify main
-#bind M-J fulljustify main
-#
-##bind M-I unindent main
-#bind M-} indent main
-#bind M-{ unindent main
-#bind M-I autoindent main
-#
-## COMMENT BLOCK
-#bind M-3 comment main
-#
+bind ^H help all
+bind M-H nohelp main
+
 ## SET MARK
-#bind ^Space mark main
-#
-## toggle smart home
-#bind M-A smarthome main
-#
-## bind autocomplete to ^I which also binds it to Tab. NICE!
-## bind ^I complete main
-#
+bind ^Space mark main
+
 ### Paint the interface elements of nano.
 ### These are examples; by default there are no colors.
-#set titlecolor brightblue
-#set numbercolor blue
-#set statuscolor brightblue
-#set keycolor brightblue
-#set functioncolor blue
-#
+set titlecolor brightblue
+set numbercolor white,blue
+set stripecolor ,blue
+set statuscolor brightblue
+set keycolor brightblue
+set functioncolor blue
